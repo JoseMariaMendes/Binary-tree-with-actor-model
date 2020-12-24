@@ -7,7 +7,7 @@ determine how to act according to the type of message you receive.
 To develop the binary tree I started by creating a Client, which is an actor and will receive messages sent by
 tree nodes with responses to certain messages, and a RootNode, which is also an actor and will serve as an intermediary,
 in the sense that you will receive the messages and send them to the tree. When creating the RootNode as well as the Nodes, the
-Address of Client and RootNode, so that all nodes can, if necessary, send messages to both.
+Address of Client and RootNode id sent, so that all nodes can, if necessary, send messages to both.
 The RootNode class can only have one child, but in case the child does not yet exist, if it receives a ContainsMessage,
 which asks if the tree has a certain value, will send a message to the Client saying that the tree is empty. At the
 case of receiving an InsertMessage, which gives an order to the tree to add a node of a certain value, the RootNode
