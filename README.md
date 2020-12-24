@@ -1,7 +1,7 @@
 # Binary-tree-with-actor-model
 Binary tree that utilizes an actor model with messages for deleting, adding and finding elements.
 
-  This program uses the Actor Model which helps to facilitate the development of competing applications, as well as
+  This program uses the Actor Model which helps to facilitate the development of concurrent applications, as well as
 distributed. Each Actor has an Address that allows messages to be sent and a handleMessage function that will
 determine how to act according to the type of message you receive.
 To develop the binary tree I started by creating a Client, which is an actor and will receive messages sent by
